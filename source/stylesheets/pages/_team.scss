@@ -1,0 +1,32 @@
+#team {
+  h1 {
+    text-align: center;
+  }
+}
+
+.team-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul li {
+    padding: 50px;
+    text-align: center;
+    margin: 20px;
+    border-top-left-radius: 50% 25px;
+    border-top-right-radius: 50% 25px;
+    border-bottom-right-radius: 50% 25px;
+    border-bottom-left-radius: 50% 25px;
+    background: white;
+  }
+  h1 {
+    outline: red 1px solid;
+  }
+}
+
+.middleman_team_avatar {
+  width: 175px;
+  border-top-left-radius: 50% 15px;
+  border-top-right-radius: 50% 15px;
+  border-bottom-right-radius: 50% 15px;
+  border-bottom-left-radius: 50% 15px;
+}

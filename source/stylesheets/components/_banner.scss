@@ -1,0 +1,28 @@
+/* Your banner CSS file */
+
+.landing-page-background {
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, rgba(0,35,50,0.7) 0%, rgba(0,35,50,0.7) 100%), url('http://www.krakow-apartments.biz/img/slider/3.jpg');
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc003c50', endColorstr='#cc003c50',GradientType=1 );
+  background-size: cover;
+}
+
+.landing-page-heading {
+  color: white;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 1), 0 0 9px rgba(0, 0, 0, 0.8);
+  font-size: 2.5em;
+
+}
+
+.landing-page-subheading {
+  color: white;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 1), 0 0 9px rgba(0, 0, 0, 0.8);
+  margin: 0 0 50px 0;
+  font-size: 1.5em;
+  font-weight: 500;
+}

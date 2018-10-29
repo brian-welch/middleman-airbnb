@@ -1,0 +1,17 @@
+/* Your avatar CSS code here */
+
+.avatar {
+  border-radius: 2px;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.3),
+              inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.message-avatar {
+  height: 50px;
+}
+
+.avatar-large {
+  height: 40px;
+}

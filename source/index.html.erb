@@ -1,15 +1,41 @@
----
-title: Le Wagon - Middleman
----
+    <div class="landing-page-background">
+      <div class="banner-content">
+        <h1 class="landing-page-heading">FIND YOUR OWN LOCAL ESCAPE</h1>
+        <h2 class="landing-page-subheading">Here you can find your perfect local get-away in nearly 200 countries.</h2>
+        <a href="#" class="btn-landing-page"><i class="fa fa-globe" aria-hidden="true"></i> Start Looking</a>
+      </div>
+    </div>
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
-</div>
+<% cities = %w[rio berlin paris amsterdam london copenhagen]
+   names  = %w[ssaunier alex-felix krokrob eschults ssaunier alex-felix]
+%>
+    <div class="container">
+      <h2 class="text-center">What is your next trip?</h2>
+
+
+      <div class="cards">
+<% cities.each_with_index do |city, i| %>
+        <div class="card">
+          <div class="card-body" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= city.downcase %>.jpg'); background-size: cover;">
+            <span class="card-category"><%= city.upcase %></span>
+            <div class="card-description">
+              <h2><%= names[i].capitalize %>'s home</h2>
+              <p>Charming room in <%= city.capitalize %></p>
+            </div>
+            <img class="card-user avatar avatar-large" src="https://kitt.lewagon.com/placeholder/users/<%= names[i] %>.png">
+            <a class="card-link" href="#"></a>
+          </div>
+          <div class="card-footer">
+            <p>Posted on <%= Date.today.strftime("%A, %b %d") %></p>
+            <div class="controls">
+              <a href="#"><i class="fa fa-star"></i></a>
+              <a href="#"><i class="fa fa-heart"></i></a>
+              <a href="#"><i class="fa fa-share"></i></a>
+            </div>
+          </div>
+        </div>
+        <%= i == 2 ? "</div><div class=\"cards\">" : "" %>
+<% end %>
+
+      </div>
+    </div>
